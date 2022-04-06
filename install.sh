@@ -49,7 +49,7 @@ echo "org /home/$user/org vboxsf uid=$user,gid=wheel,rw,dmode=700,fmode=600,nofa
 echo "workspace /home/$user/workspace vboxsf uid=$user,gid=wheel,rw,dmode=700,fmode=600,nofail 0 0" >> /mnt/etc/fstab
 
 # chroot
-curl -o /mnt/chroot-install.sh https://raw.githubusercontent.com/abrochard/spartan-arch/master/chroot-install.sh
+curl -o /mnt/chroot-install.sh https://raw.githubusercontent.com/tsokk/spartan-arch/master/chroot-install.sh
 arch-chroot /mnt /bin/bash ./chroot-install.sh $user $password $fast
 
 # reboot
