@@ -86,7 +86,7 @@ echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
 systemctl enable ntpdate.service
 
 # preparing post install
-wget https://raw.githubusercontent.com/abrochard/spartan-arch/master/post-install.sh -O /home/$user/post-install.sh
+curl  -o /home/$user/post-install.sh https://raw.githubusercontent.com/abrochard/spartan-arch/master/post-install.sh
 chown $user:$user /home/$user/post-install.sh
 
 echo 'Done'
