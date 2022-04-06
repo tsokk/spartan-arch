@@ -53,5 +53,5 @@ curl -o /mnt/chroot-install.sh https://raw.githubusercontent.com/tsokk/spartan-a
 arch-chroot /mnt /bin/bash ./chroot-install.sh $user $password $fast
 
 # reboot
-umount /mnt
+umount -R /mnt
 reboot
