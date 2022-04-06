@@ -11,7 +11,7 @@ This is a set of scripts designed to automate the creation of a minimal VM runni
 ## Installation
 Boot the VM on archlinux iso and then run the command
 ```shell
-curl -o install.sh https://goo.gl/ZPAMtT
+curl -o install.sh https://raw.githubusercontent.com/tsokk/spartan-arch/master/install.sh
 bash install.sh [user] [password] [fast]
 ```
 All arguments are optional and will be prompted for if not passed on invocation:
