@@ -67,9 +67,7 @@ pip install pipenv bpython ipython
 echo 'Setting up user'
 read -t 1 -n 1000000 discard      # discard previous input
 echo 'root:'$password | chpasswd
-useradd -m -G wheel -s /bin/zsh $user
-touch /home/$user/.zshrc
-chown $user:$user /home/$user/.zshrc
+useradd -m -G wheel -s /bin/bash $user
 mkdir /home/$user/org
 chown $user:$user /home/$user/org
 mkdir /home/$user/workspace
