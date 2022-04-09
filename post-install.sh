@@ -28,12 +28,6 @@ echo 'XTerm*foreground:white' >> ~/.Xdefaults
 echo 'UXTerm*background:black' >> ~/.Xdefaults
 echo 'UXTerm*foreground:white' >> ~/.Xdefaults
 
-# oh-my-zsh
-cd
-rm ~/.zshrc -f
-echo 'ZSH_THEME="robbyrussell"' > ~/.zshrc
-echo 'plugins=(git compleat sudo archlinux emacs autojump common-aliases)/' >> ~/.zshrc
-
 # environment variable
 echo 'export EDITOR=emacsclient' >> ~/.zshrc
 echo 'export TERMINAL=lxterminal' >> ~/.zshrc
