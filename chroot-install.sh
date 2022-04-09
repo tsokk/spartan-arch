@@ -57,7 +57,7 @@ echo 'vboxsf' > /etc/modules-load.d/vboxsf.conf
 
 # install dev envt.
 echo 'Installing dev environment'
-pacman -S --noconfirm git emacs zsh wget make gcc grep i3 dmenu sudo dhcpcd
+pacman -S --noconfirm git emacs wget make gcc clang grep i3 dmenu sudo dhcpcd
 pacman -S --noconfirm chromium curl autojump openssh mlocate the_silver_searcher
 pacman -S --noconfirm ttf-hack lxterminal nitrogen ntp dhclient keychain
 pacman -S --noconfirm python-pip pkg-config
