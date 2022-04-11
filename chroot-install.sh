@@ -47,6 +47,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 # install Xorg
 echo 'Installing Xorg'
 pacman -S --noconfirm xorg xorg-xinit xterm
+localectl set-x11-keymap fi
 
 # install virtualbox guest modules
 echo 'Installing VB-guest-modules'
