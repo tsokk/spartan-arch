@@ -51,10 +51,8 @@ localectl set-x11-keymap fi
 
 # install virtualbox guest modules
 echo 'Installing VB-guest-modules'
-pacman -S --noconfirm virtualbox-guest-modules-arch virtualbox-guest-utils
-
-# vbox modules
-echo 'vboxsf' > /etc/modules-load.d/vboxsf.conf
+pacman -S --noconfirm virtualbox-guest-utils
+systemctl enable vboxservice.service
 
 # install dev envt.
 echo 'Installing dev environment'
